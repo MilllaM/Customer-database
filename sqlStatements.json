@@ -1,0 +1,15 @@
+{
+"getAll": ["SELECT customerId,firstname,lastname,address,favoritIceCream",
+"FROM customer"
+],
+"getCustomer": ["SELECT customerId,firstname,lastname,address,favoritIceCream",
+"FROM customer WHERE customerId=?"
+],
+"insertCustomer": ["INSERT INTO customer (firstname,lastname,",
+"address,favoritIceCream) VALUES (?,?,?,?)"
+],
+"deleteCustomer": ["DELETE FROM customer WHERE customerId=?"],
+"updateCustomer": ["UPDATE customer SET firstname=?,lastname=?,",
+"address=?,favoritIceCream=? WHERE customerId=?"
+]
+}

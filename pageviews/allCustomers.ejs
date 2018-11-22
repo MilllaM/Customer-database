@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>All persons</title>
+  <link rel="stylesheet" href="/styles/styles.css" type="text/css">
+</head>
+<body>
+  <main>
+    <h1>Kaik meiä asiakka</h1>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Asiakkaan ID</th>
+          <th>Etunimi</th>
+          <th>Sukunimi</th>
+          <th>Osoite</th>
+          <th>Lempparijätski</th>
+
+        </tr>
+      </thead>
+      <tbody>
+        <% result.forEach(customer => { %>
+          <tr>
+            <td><%= customer.customerId %></td>
+            <td><%= customer.firstname %></td>
+            <td><%= customer.lastname %></td>
+            <td><%= customer.address %></td>
+            <td><%= customer.favoritIceCream %></td>
+          </tr>
+          <% });  %>
+        </tbody>
+
+      </table>
+      <a href="/"><button>Takas pääsivul</button></a>
+    </main>
+
+  </body>
+  </html>

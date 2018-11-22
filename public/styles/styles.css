@@ -1,0 +1,56 @@
+main {
+  display:grid;
+  align-items: center;
+  justify-items:center;
+  font-family: "verdana", sans-serif;
+}
+
+input[readonly] {
+  background-color: lightgrey;
+}
+
+h1 {
+    font-family: "verdana", sans-serif;
+    font-size: 24px;
+}
+
+p {
+    font-family: "verdana", sans-serif;
+    font-size: 18px;
+}
+
+table, td, th {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding:0.6em;
+}
+
+th {
+  background-color: #FFCCBC;
+}
+
+table {
+  margin-bottom: 1em;
+}
+
+tr:nth-child(odd){
+  background-color: #77A6F7;
+}
+
+tr:nth-child(even){
+  background-color: #D3E3FC;
+}
+
+button {
+  font-family: sans-serif;
+  font-size: 1.5em;
+  width: 13em;
+  height: 2.1em;
+  border:0.1em solid black;
+  border-radius: 0.5em;
+  box-shadow: 0.2em 0.2em 0.3em rgb(0,0,0);
+  margin-bottom: 0.3em;
+  margin-top: 0.3em;
+  color: #FFF;
+  background-color: #00887A;
+}

@@ -1,0 +1,22 @@
+
+DROP DATABASE if exists customerdb;
+CREATE DATABASE customerdb;
+use customerdb;
+
+
+CREATE TABLE customer (
+	customerID INT NOT NULL AUTO_INCREMENT,
+	firstname VARCHAR(12),
+	lastname VARCHAR(16),
+	address VARCHAR(21),
+	favoritIceCream VARCHAR(18),
+	PRIMARY KEY(customerID)
+);
+
+
+INSERT INTO customer (firstname, lastname, address, favaritIceCream)
+VALUES ('Liinu', 'Korhonen', 'Kivikuja 3, 38440 Mikkeli', 'minttu'), ('Kalle', 'Leppänen', 'Kirkkotie 15, 23100 Mynämäki', 'vadelma');
+
+drop user if exists 'ella'@'localhost';
+create userif not exists 'ella'@'localhost' identified by 'UNcUd49J';
+grant all privileges on customerdb.* to 'ella'@'localhost';

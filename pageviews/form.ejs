@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="/styles/styles.css" type="text/css">
+  <title><%= title %></title>
+</head>
+<body>
+  <h1><%= header %></h1>
+  <form action = "<%= action %>" method="post">
+    <p>
+      <label for ="customerId">Asiakkaan Id: </label>
+      <input type="text" id="customerId" name="customerId" size="5"
+      value="<%=customerId.value %>" <%= customerId.readonly %> >
+    </p>
+    <p>
+      <label for="firstname">Etunimi:</label>
+      <input type="text" id="firstname" name="firstname" size="15"
+      value="<%=firstname.value %>" <%= firstname.readonly %> >
+    </p>
+    <p>
+      <label for="lastname">Sukunimi:</label>
+      <input type="text" id="lastname" name="lastname" size="25"
+      value="<%=lastname.value %>" <%= lastname.readonly %> >
+    </p>
+    <p>
+      <label for="address">Osoite:</label>
+      <input type="text" id="address" name="address" size="25"
+      value="<%=address.value %>" <%= address.readonly %> >
+    </p>
+    <p>
+      <label for="favoritIceCream">Lempparijätski:</label>
+      <input type="text" id="favoritIceCream" name="favoritIceCream" size="10"
+      value="<%=favoritIceCream.value %>" <%= favoritIceCream.readonly %> >
+    </p>
+    <button type="submit">Lähetä</button>
+  </form>
+  <a href="/"><button>Takas pääsivul</button>
+
+  </body>
+  </html>
